@@ -46,7 +46,10 @@ public class Product {
 
             // List<Transaction> transaction = new ArrayList<>();
 
-            
+            Transaction newTransaction = new Transaction(chosenProduct.name, chosenProduct.price, chosenProduct.quantitySold, chosenProduct.price * quantity);
+
+            Transaction transaction = new Transaction();
+            transaction.addTransaction(newTransaction);
 
         } catch (Exception e) {
             System.err.println(e);
